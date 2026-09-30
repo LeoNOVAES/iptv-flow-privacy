@@ -6,89 +6,160 @@
 <title>IPTV Flow — Política de Privacidade</title>
 <style>
   :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 720px;
+    margin: 0;
+    padding: 0 24px;
+    line-height: 1.7;
+    color: #1f2430;
+    background: #f6f7f9;
+  }
+  .container {
+    max-width: 760px;
     margin: 0 auto;
-    padding: 24px 20px 64px;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fafafa;
+    padding: 64px 0 96px;
   }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e6e6e6; background: #111; }
-    a { color: #7ab8ff; }
-  }
-  a { color: #0b57d0; }
-  h1 { font-size: 1.6rem; border-bottom: 2px solid #0b57d0; padding-bottom: 8px; }
-  h2 { font-size: 1.15rem; margin-top: 28px; }
   .app-badge {
     display: inline-block;
     background: #0b57d0;
     color: #fff;
-    padding: 4px 12px;
-    border-radius: 8px;
+    padding: 8px 18px;
+    border-radius: 999px;
     font-weight: 600;
     font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
   }
-  footer { margin-top: 48px; font-size: 0.85rem; opacity: 0.7; border-top: 1px solid #999; padding-top: 12px; }
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.02em;
+  }
+  .updated {
+    color: #5f6672;
+    font-size: 0.95rem;
+    margin: 0 0 12px 0;
+  }
+  .intro {
+    font-size: 1.05rem;
+    color: #3c424e;
+    margin: 0 0 56px 0;
+  }
+  section {
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 14px 0; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: #0b57d0; }
+  footer {
+    margin-top: 48px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  @media (max-width: 640px) {
+    .container { padding: 40px 0 64px; }
+    section { padding: 24px 22px; margin-bottom: 24px; }
+    .intro { margin-bottom: 40px; }
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #101216; }
+    section { background: #181b21; border-color: #262a33; }
+    .intro { color: #b3b9c4; }
+    .updated { color: #8b929e; }
+    a { color: #7ab8ff; }
+    .app-badge { background: #3b74e0; }
+    footer { color: #8b929e; }
+  }
 </style>
 </head>
 <body>
-<span class="app-badge">IPTV Flow</span>
-<h1>Política de Privacidade</h1>
-<p>Última atualização: 07 de setembro de 2026</p>
+<div class="container">
 
-<p>O IPTV Flow ("nós", "nosso" ou "aplicativo") respeita a sua privacidade.
-Esta Política de Privacidade explica como tratamos informações quando você
-usa nosso aplicativo móvel.</p>
+  <span class="app-badge">IPTV Flow</span>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: 07 de setembro de 2026</p>
+  <p class="intro">
+    O IPTV Flow respeita a sua privacidade. Esta Política de Privacidade
+    explica como tratamos informações quando você usa nosso aplicativo móvel.
+  </p>
 
-<h2>1. Conteúdo fornecido pelo usuário</h2>
-<p>O IPTV Flow <strong>não fornece</strong> nenhum conteúdo de mídia, lista de
-canais ou playlist. Todo o conteúdo vem de listas que <strong>você</strong>
-adiciona (URLs ou arquivos locais). Nós não revisamos, armazenamos em
-servidores próprios nem transmitimos essas listas.</p>
+  <section>
+    <h2>1. Conteúdo fornecido pelo usuário</h2>
+    <p>O IPTV Flow <strong>não fornece</strong> nenhum conteúdo de mídia, lista
+    de canais ou playlist. Todo o conteúdo vem de listas que
+    <strong>você</strong> adiciona (URLs ou arquivos locais). Nós não
+    revisamos, armazenamos em servidores próprios nem transmitimos essas
+    listas.</p>
+  </section>
 
-<h2>2. Informações que coletamos</h2>
-<p>Nós <strong>não coletamos</strong> informações pessoais diretamente. No
-entanto, o aplicativo utiliza serviços de terceiros que podem coletar dados
-limitados:</p>
-<ul>
-  <li><strong>Google AdMob (com mediação Meta Audience Network e
-  AppLovin)</strong>: exibe anúncios e pode coletar identificadores de
-  dispositivo e dados de uso, conforme descrito na
-  <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
-  <li><strong>RevenueCat</strong>: processa compras no aplicativo e pode
-  coletar dados de transação e identificadores de dispositivo, conforme a
-  <a href="https://www.revenuecat.com/privacy">Política de Privacidade da RevenueCat</a>.</li>
-</ul>
+  <section>
+    <h2>2. Informações que coletamos</h2>
+    <p>Nós <strong>não coletamos</strong> informações pessoais diretamente. No
+    entanto, o aplicativo utiliza serviços de terceiros que podem coletar
+    dados limitados:</p>
+    <ul>
+      <li><strong>Google AdMob (com mediação Meta Audience Network e
+      AppLovin)</strong>: exibe anúncios e pode coletar identificadores de
+      dispositivo e dados de uso, conforme descrito na
+      <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
+      <li><strong>RevenueCat</strong>: processa compras no aplicativo e pode
+      coletar dados de transação e identificadores de dispositivo, conforme a
+      <a href="https://www.revenuecat.com/privacy">Política de Privacidade da RevenueCat</a>.</li>
+    </ul>
+  </section>
 
-<h2>3. Armazenamento local</h2>
-<p>As playlists que você importa são processadas e armazenadas
-<strong>localmente no seu aparelho</strong>. Favoritos e configurações
-também ficam armazenados localmente ou na área restrita do aplicativo.</p>
+  <section>
+    <h2>3. Armazenamento local</h2>
+    <p>As playlists que você importa são processadas e armazenadas
+    <strong>localmente no seu aparelho</strong>. Favoritos e configurações
+    também ficam armazenados localmente ou na área restrita do aplicativo.</p>
+  </section>
 
-<h2>4. Acesso à internet</h2>
-<p>O aplicativo precisa de acesso à internet para baixar playlists e
-transmitir os canais que você escolher. O tráfego de streaming ocorre
-diretamente entre o seu aparelho e a fonte que você fornece.</p>
+  <section>
+    <h2>4. Acesso à internet</h2>
+    <p>O aplicativo precisa de acesso à internet para baixar playlists e
+    transmitir os canais que você escolher. O tráfego de streaming ocorre
+    diretamente entre o seu aparelho e a fonte que você fornece.</p>
+  </section>
 
-<h2>5. Privacidade de crianças</h2>
-<p>O IPTV Flow não é destinado a crianças menores de 13 anos. Não coletamos
-intencionalmente informações pessoais de crianças.</p>
+  <section>
+    <h2>5. Privacidade de crianças</h2>
+    <p>O IPTV Flow não é destinado a crianças menores de 13 anos. Não
+    coletamos intencionalmente informações pessoais de crianças.</p>
+  </section>
 
-<h2>6. Alterações nesta política</h2>
-<p>Podemos atualizar esta Política de Privacidade periodicamente.
-Alterações serão publicadas nesta página.</p>
+  <section>
+    <h2>6. Alterações nesta política</h2>
+    <p>Podemos atualizar esta Política de Privacidade periodicamente.
+    Alterações serão publicadas nesta página.</p>
+  </section>
 
-<h2>7. Contato</h2>
-<p>Dúvidas sobre esta política? Fale conosco:
-<strong>leandrofernandesnovaes@hotmail.com</strong></p>
+  <section>
+    <h2>7. Contato</h2>
+    <p>Dúvidas sobre esta política? Fale conosco:
+    <strong>leandrofernandesnovaes@hotmail.com</strong></p>
+  </section>
 
-<footer>
-  IPTV Flow — aplicativo de reprodução de listas M3U fornecidas pelo
-  próprio usuário. O aplicativo não fornece, hospeda nem distribui
-  conteúdo.
-</footer>
+  <footer>
+    IPTV Flow — aplicativo de reprodução de listas M3U fornecidas pelo
+    próprio usuário. O aplicativo não fornece, hospeda nem distribui conteúdo.
+  </footer>
+
+</div>
 </body>
 </html>
